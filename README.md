@@ -10,4 +10,7 @@ voraussetzung
 - webserver muss installiert sein nginx oder ähnliches
 - ffmpeg muss installiert sein
 
+<img src="ffmpeg-starter1_aysad_koaznoglu.JPG" />
+<img src="ffmpeg-starter_info_aysad_koaznoglu.JPG" />
+<img src="ffmpeg-starter_auto_playlist_aysad_koaznoglu.JPG" />
 <img src="ffmpeg_7instance.JPG" />
