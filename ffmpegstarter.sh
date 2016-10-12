@@ -11,7 +11,7 @@
 
 webtspath="/usr/local/nginx/html/live/"
 webm3u8path="/usr/local/nginx/html/live/"
-thisserverlink="http://62.75.191.143/live/"
+thisserverlink="http://localhost/live/" # oder öffentlich ip deines servers
 thisPlaylist="plist.m3u8"
 tmppath="/tmp/"
 
