@@ -39,7 +39,10 @@ nlink[7]='trtbelgesel'
 a=0;
 killall -q $binpath$ffmpeg 
 killall -q $ffmpeg 
+
 rm $tmppath$ffmpids
+rm -rf $webtspath*.ts
+rm -rf $webm3u8path*.m3u8
 
 
 echo "#EXTM3U" > $webm3u8path$thisPlaylist
