@@ -1,4 +1,13 @@
 #! /bin/bash
+#
+# coder: Aysad Kozanoglu
+# email: aysadx@gmail.com
+# web: http://onweb.pe.hu#
+# coder: Aysad Kozanoglu
+# email: aysadx@gmail.com
+# web: http://onweb.pe.hu
+#
+#
 
 webtspath="/usr/local/nginx/html/live/"
 webm3u8path="/usr/local/nginx/html/live/"
