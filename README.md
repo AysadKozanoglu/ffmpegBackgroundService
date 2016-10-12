@@ -9,3 +9,5 @@ Jede ffmpeg verfügt über seine eigene logausgabe in Datei.
 voraussetzung
 - webserver muss installiert sein nginx oder ähnliches
 - ffmpeg muss installiert sein
+
+<img src="ffmpeg_7instance.JPG" />
