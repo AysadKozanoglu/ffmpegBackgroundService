@@ -7,4 +7,5 @@ Zu guter letzt wird die Ausgabe von pid zu den jeweiligen ffmpeg instanz ausgege
 Jede ffmpeg verfügt über seine eigene logausgabe in Datei.
 
 voraussetzung
-- webserver muss installiert sein nginx oder ähnliches- ffmpeg muss installiert sein
+- webserver muss installiert sein nginx oder ähnliches
+- ffmpeg muss installiert sein
