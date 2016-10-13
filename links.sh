@@ -1,4 +1,8 @@
 #! /bin/bash
+
+#
+# links for ffmpeg to use with source links.sh in ffmpegstarter.sh
+#
 slink[0]="http://daserste_live-lh.akamaihd.net/i/daserste_de@91204/index_2692_av-p.m3u8"
 nlink[0]="daserste"
 slink[1]='http://media.netd.com.tr/S2/HLS_LIVE/cnn_turk/750/prog_index.m3u8'
