@@ -5,6 +5,8 @@
 # web: http://onweb.pe.hu#
 #
 
+source links.sh
+
 webtspath="/usr/local/nginx/html/live/"
 webm3u8path="/usr/local/nginx/html/live/"
 thisserverlink="http://localhost/live/" # oder öffentlich ip deines servers
@@ -14,23 +16,6 @@ tmppath="/tmp/"
 binpath="/usr/bin/"
 ffmpeg="ffmpeg314"
 ffmpids="ffmpids"
-
-slink[0]="http://daserste_live-lh.akamaihd.net/i/daserste_de@91204/index_2692_av-p.m3u8"
-nlink[0]="daserste"
-slink[1]='http://media.netd.com.tr/S2/HLS_LIVE/cnn_turk/750/prog_index.m3u8'
-nlink[1]='cnnturk'
-slink[2]='http://trtcanlitv-lh.akamaihd.net/i/TRTWORLD_1@321783/index_900_av-b.m3u8'
-nlink[2]='trtworld'
-slink[3]='http://trtcanlitv-lh.akamaihd.net/i/TRTSPOR1_1@182042/index_800_av-b.m3u8'
-nlink[3]='trtspor'
-slink[4]='http://trtcanlitv-lh.akamaihd.net/i/TRTTURK_1@182144/index_700_av-p.m3u8'
-nlink[4]='trtturk'
-slink[5]='http://trtcanlitv-lh.akamaihd.net/i/TRT1HD_1@181842/index_900_av-b.m3u8'
-nlink[5]='trt1'
-slink[6]='http://trtcanlitv-lh.akamaihd.net/i/TRTHABERHD_1@181942/index_900_av-p.m3u8'
-nlink[6]='trthaber'
-slink[7]='http://trtcanlitv-lh.akamaihd.net/i/TRTBELGESEL_1@182145/index_900_av-b.m3u8'
-nlink[7]='trtbelgesel'
 
 a=0;
 killall -q $binpath$ffmpeg 
