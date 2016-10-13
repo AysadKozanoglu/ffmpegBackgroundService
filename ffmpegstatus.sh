@@ -14,7 +14,7 @@ date=`date "+%F %T"`
 echo $instance $getinstance
 echo $instance $getinstance >> $weblog
 
-if [ $instance -le $getinstance ];
+if [ $instance -lt $getinstance ];
 then
         echo $date" ffmpegstarter instance "$instance" restart" >> /tmp/ffstatus.log
         echo $date" ffmpeg  instance "$instance" restart" >> $weblog
@@ -24,5 +24,4 @@ else
         echo $date" instance ok">> /tmp/ffstatus.log
         echo $date" "$instance" instance ok">> $weblog
 fi
-
 
