@@ -5,7 +5,7 @@
 # web: http://onweb.pe.hu#
 #
 
-source links.sh
+source /source/links.sh
 
 webtspath="/usr/local/nginx/html/live/"
 webm3u8path="/usr/local/nginx/html/live/"
@@ -30,9 +30,9 @@ echo "#EXTM3U" > $webm3u8path$thisPlaylist
 for i in "${slink[@]}"
 do
 	sleep 2
-	
+	//-segment_format mpeg_ts
         $binpath$ffmpeg -d -y -i ${slink[a]}  -nostats -hide_banner -loglevel panic -vcodec copy -vprofile baseline -acodec aac \
-        -strict -2 -f segment -segment_list_size 5 -segment_time 10 -segment_list_flags +live -segment_format mpeg_ts -segment_list $webm3u8path${nlink[a]}".m3u8" \
+        -strict -2 -f segment -segment_list_size 5 -segment_time 10 -segment_list_flags +live  -segment_list $webm3u8path${nlink[a]}".m3u8" \
         $webtspath${nlink[a]}%05d.ts </dev/null >/dev/null 2> $tmppath${nlink[a]}".log" & echo $! ${nlink[a]} >> $tmppath$ffmpids
 
 	
