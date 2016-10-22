@@ -35,6 +35,10 @@ do
         -strict -2 -f segment -segment_list_size 5 -segment_time 10 -segment_list_flags +live  -segment_list $webm3u8path${nlink[a]}".m3u8" \
         $webtspath${nlink[a]}%05d.ts </dev/null >/dev/null 2> $tmppath${nlink[a]}".log" & echo $! ${nlink[a]} >> $tmppath$ffmpids
 
+	# stable on fos 
+	#/usr/local/bin/ffmpeg -y -probesize 15000000 -analyzeduration 12000000 -i http://live.netd.com.tr/S1/HLS_LIVE/tv2/playlist.m3u8 \
+	#-user_agent FOS-Streaming -strict -2 -dn -acodec copy -vcodec copy \
+	#-hls_flags delete_segments -hls_time 10 -hls_list_size 8 /home/hlsserver/fos/www/hl/2_.m3u8
 	
 	#$binpath$ffmpeg -d -y -i ${slink[a]}  -nostats -hide_banner -loglevel panic -vcodec copy -vprofile baseline -acodec aac \
 	#-strict -2 -hls_flags delete_segments -hls_time 10 -hls_list_size 6 -hls_segment_filename $webtspath${nlink[a]}"%05d.ts" \
